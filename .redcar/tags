@@ -1,12 +1,15 @@
-1294062968
+1294066734
+AddEmailUniquenessIndex	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 Application	/home/cjbrowne/rails_projects/sample_app/config/application.rb	  class Application 
 ApplicationController	/home/cjbrowne/rails_projects/sample_app/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/application_helper.rb	module ApplicationHelper
+CreateUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103141148_create_users.rb	class CreateUsers 
 PagesController	/home/cjbrowne/rails_projects/sample_app/app/controllers/pages_controller.rb	class PagesController 
 PagesHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/pages_helper.rb	module PagesHelper
 SampleApp	/home/cjbrowne/rails_projects/sample_app/config/application.rb	module SampleApp
 Str	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function Str(key, holder, stack)
 Type	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function Type(o)
+User	/home/cjbrowne/rails_projects/sample_app/app/models/user.rb	class User 
 UsersController	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	class UsersController 
 UsersHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/users_helper.rb	module UsersHelper
 about	/home/cjbrowne/rails_projects/sample_app/app/controllers/pages_controller.rb	  def about
@@ -47,6 +50,8 @@ detect	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	
 dirCheck	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function dirCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dirNodeCheck	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dispatch	/home/cjbrowne/rails_projects/sample_app/public/javascripts/effects.js	function dispatch(effect, eventName)
+down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103141148_create_users.rb	  def self.down
+down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	  def self.down
 each	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function each(iterator)
 each	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -154,6 +159,7 @@ scan	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	fu
 select	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function select()
 select	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function select(selector, scope)
 set	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function set(key, value)
+show	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def show
 size	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function size()
 size	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function size()
 sortBy	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function sortBy(iterator, context)
@@ -193,6 +199,8 @@ unescapeHTML	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototy
 unfilterJSON	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function unfilterJSON(filter)
 uniq	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function uniq(sorted)
 unset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function unset(key)
+up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103141148_create_users.rb	  def self.up
+up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	  def self.up
 update	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function update(array, args)
 update	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function update(element, content)
 update	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function update(object)
