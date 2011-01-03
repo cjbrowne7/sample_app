@@ -1,4 +1,4 @@
-1294062647
+1294062968
 Application	/home/cjbrowne/rails_projects/sample_app/config/application.rb	  class Application 
 ApplicationController	/home/cjbrowne/rails_projects/sample_app/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/application_helper.rb	module ApplicationHelper
@@ -123,6 +123,7 @@ keys	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	fu
 klass	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function klass()
 last	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function last()
 lastIndexOf	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function lastIndexOf(item, i)
+logo	/home/cjbrowne/rails_projects/sample_app/app/helpers/application_helper.rb	  def logo
 match	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function match()
 match	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function match(element, selector)
 max	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function max(iterator, context)
