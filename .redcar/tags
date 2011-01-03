@@ -1,4 +1,4 @@
-1294041334
+1294062036
 Application	/home/cjbrowne/rails_projects/sample_app/config/application.rb	  class Application 
 ApplicationController	/home/cjbrowne/rails_projects/sample_app/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/application_helper.rb	module ApplicationHelper
@@ -167,6 +167,7 @@ succ	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	fu
 succ	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function succ()
 times	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function times(count)
 times	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function times(iterator, context)
+title	/home/cjbrowne/rails_projects/sample_app/app/helpers/application_helper.rb	  def title
 toArray	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function toArray()
 toArray	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function toArray()
 toCSSPixels	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function toCSSPixels(number)
