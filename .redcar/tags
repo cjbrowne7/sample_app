@@ -1,4 +1,4 @@
-1294062036
+1294062647
 Application	/home/cjbrowne/rails_projects/sample_app/config/application.rb	  class Application 
 ApplicationController	/home/cjbrowne/rails_projects/sample_app/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/application_helper.rb	module ApplicationHelper
@@ -7,6 +7,8 @@ PagesHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/pages_helper.rb
 SampleApp	/home/cjbrowne/rails_projects/sample_app/config/application.rb	module SampleApp
 Str	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function Str(key, holder, stack)
 Type	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function Type(o)
+UsersController	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	class UsersController 
+UsersHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/users_helper.rb	module UsersHelper
 about	/home/cjbrowne/rails_projects/sample_app/app/controllers/pages_controller.rb	  def about
 abs	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function abs()
 absolutize	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function absolutize(element)
@@ -129,6 +131,7 @@ merge	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	f
 merge	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function merge(object)
 methodize	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function methodize()
 min	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function min(iterator, context)
+new	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def new
 observe	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function observe(element, eventName, handler)
 on	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function on(element, eventName, selector, callback)
 parseColor	/home/cjbrowne/rails_projects/sample_app/public/javascripts/effects.js	function parseColor(color)
