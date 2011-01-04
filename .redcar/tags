@@ -1,4 +1,4 @@
-1294150526
+1294154799
 AddEmailUniquenessIndex	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 AddPasswordToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104100354_add_password_to_users.rb	class AddPasswordToUsers 
 AddSaltToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104122647_add_salt_to_users.rb	class AddSaltToUsers 
@@ -40,6 +40,7 @@ compact	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js
 concat	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function concat()
 contact	/home/cjbrowne/rails_projects/sample_app/app/controllers/pages_controller.rb	  def contact
 copy	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
+create	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def create
 create	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function create()
 cssNameFor	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function cssNameFor(key)
 cumulativeOffset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function cumulativeOffset(element)
