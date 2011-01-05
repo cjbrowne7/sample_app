@@ -1,4 +1,5 @@
-1294234757
+1294243213
+AddAdminToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110105154142_add_admin_to_users.rb	class AddAdminToUsers 
 AddEmailUniquenessIndex	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 AddPasswordToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104100354_add_password_to_users.rb	class AddPasswordToUsers 
 AddSaltToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104122647_add_salt_to_users.rb	class AddSaltToUsers 
@@ -21,9 +22,11 @@ abs	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	fun
 absolutize	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function absolutize(element)
 addMethods	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function addMethods(source)
 addText	/home/cjbrowne/rails_projects/sample_app/public/javascripts/controls.js	function addText(mode, condition)
+admin_user	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	    def admin_user
 all	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function all(iterator, context)
 any	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function any(iterator, context)
 argumentNames	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function argumentNames()
+authenticate	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	    def authenticate
 authenticate	/home/cjbrowne/rails_projects/sample_app/app/models/user.rb	  def self.authenticate(email, submitted_password)
 authenticate_with_salt	/home/cjbrowne/rails_projects/sample_app/app/models/user.rb	  def self.authenticate_with_salt(id, cookie_salt)
 bind	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function bind(context)
@@ -35,6 +38,7 @@ ceil	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	fu
 checkDeficiency	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function checkDeficiency(tagName)
 checkReadyState	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function checkReadyState()
 clear	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function clear()
+clear_return_to	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	    def clear_return_to
 clone	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function clone()
 clone	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function clone()
 clone	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function clone(object)
@@ -43,6 +47,7 @@ compact	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js
 concat	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function concat()
 contact	/home/cjbrowne/rails_projects/sample_app/app/controllers/pages_controller.rb	  def contact
 copy	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
+correct_user	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	    def correct_user
 create	/home/cjbrowne/rails_projects/sample_app/app/controllers/sessions_controller.rb	  def create
 create	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def create
 create	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function create()
@@ -51,12 +56,15 @@ cumulativeOffset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/pro
 cumulativeScrollOffset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function cumulativeScrollOffset(element)
 current_user	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def current_user
 current_user=	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def current_user=(user)
+current_user?	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def current_user?(user)
 curry	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function curry()
 dasherize	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function dasherize()
 defer	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function defer()
 define	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function define(D)
 delay	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function delay(timeout)
+deny_access	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def deny_access
 destroy	/home/cjbrowne/rails_projects/sample_app/app/controllers/sessions_controller.rb	  def destroy
+destroy	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def destroy
 detect	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function detect(iterator, context)
 dirCheck	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function dirCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dirNodeCheck	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
@@ -65,9 +73,11 @@ down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103141148_create_u
 down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	  def self.down
 down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104100354_add_password_to_users.rb	  def self.down
 down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104122647_add_salt_to_users.rb	  def self.down
+down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110105154142_add_admin_to_users.rb	  def self.down
 each	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function each(iterator)
 each	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
+edit	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def edit    
 element	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function element(event)
 empty	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function empty()
 encrypt	/home/cjbrowne/rails_projects/sample_app/app/models/user.rb	    def encrypt(string)
@@ -109,6 +119,7 @@ inGroupsOf	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype
 include	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function include(object)
 include	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function include(pattern)
 include	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function include(value)
+index	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def index
 index	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function index(value)
 indexOf	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function indexOf(item, i)
 initialize	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function initialize(object)
@@ -172,6 +183,7 @@ pollDoScroll	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototy
 positionedOffset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function positionedOffset(element)
 prepareReplacement	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function prepareReplacement(replacement)
 purgeElement	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function purgeElement(element)
+redirect_back_or	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def redirect_back_or(default)
 reject	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function reject(iterator, context)
 relativize	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function relativize(element)
 remember_token	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	    def remember_token
@@ -192,6 +204,7 @@ sortBy	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	
 startsWith	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function startsWith(pattern)
 stop	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function stop(event)
 stopObserving	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function stopObserving(element, eventName, handler)
+store_location	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	    def store_location
 stringify	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function stringify(object)
 strip	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function strip()
 stripAlpha	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function stripAlpha(filter)
@@ -230,6 +243,8 @@ up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103141148_create_use
 up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	  def self.up
 up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104100354_add_password_to_users.rb	  def self.up
 up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104122647_add_salt_to_users.rb	  def self.up
+up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110105154142_add_admin_to_users.rb	  def self.up
+update	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def update
 update	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function update(array, args)
 update	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function update(element, content)
 update	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function update(object)
