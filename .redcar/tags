@@ -1,4 +1,4 @@
-1294232810
+1294234757
 AddEmailUniquenessIndex	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 AddPasswordToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104100354_add_password_to_users.rb	class AddPasswordToUsers 
 AddSaltToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104122647_add_salt_to_users.rb	class AddSaltToUsers 
@@ -119,6 +119,7 @@ inspect	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js
 inspect	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function inspect()
 inspect	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function inspect(object)
 inspect	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function inspect(useDoubleQuotes)
+integration_sign_in	/home/cjbrowne/rails_projects/sample_app/spec/spec_helper.rb	  def integration_sign_in(user)
 interpolate	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function interpolate(object, pattern)
 intersect	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function intersect(array)
 invoke	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function invoke(method)

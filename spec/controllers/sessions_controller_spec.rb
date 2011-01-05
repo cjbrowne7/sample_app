@@ -13,6 +13,11 @@ describe SessionsController do
       get :new
       response.should have_selector("title", :content => "Sign in")
     end
+    
+    #it "should be secure" do
+    #  get :new
+    #  response.should redirect_to(:protocol => "https://")
+    #end
   end
   
   describe "POST 'create'" do
