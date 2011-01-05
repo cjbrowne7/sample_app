@@ -1,4 +1,4 @@
-1294155278
+1294232810
 AddEmailUniquenessIndex	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 AddPasswordToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104100354_add_password_to_users.rb	class AddPasswordToUsers 
 AddSaltToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104122647_add_salt_to_users.rb	class AddSaltToUsers 
@@ -9,6 +9,8 @@ CreateUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103141148_c
 PagesController	/home/cjbrowne/rails_projects/sample_app/app/controllers/pages_controller.rb	class PagesController 
 PagesHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/pages_helper.rb	module PagesHelper
 SampleApp	/home/cjbrowne/rails_projects/sample_app/config/application.rb	module SampleApp
+SessionsController	/home/cjbrowne/rails_projects/sample_app/app/controllers/sessions_controller.rb	class SessionsController 
+SessionsHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	module SessionsHelper
 Str	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function Str(key, holder, stack)
 Type	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function Type(o)
 User	/home/cjbrowne/rails_projects/sample_app/app/models/user.rb	class User 
@@ -23,6 +25,7 @@ all	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	fun
 any	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function any(iterator, context)
 argumentNames	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function argumentNames()
 authenticate	/home/cjbrowne/rails_projects/sample_app/app/models/user.rb	  def self.authenticate(email, submitted_password)
+authenticate_with_salt	/home/cjbrowne/rails_projects/sample_app/app/models/user.rb	  def self.authenticate_with_salt(id, cookie_salt)
 bind	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function bind(context)
 bindAsEventListener	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function bindAsEventListener(context)
 blank	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function blank()
@@ -40,16 +43,20 @@ compact	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js
 concat	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function concat()
 contact	/home/cjbrowne/rails_projects/sample_app/app/controllers/pages_controller.rb	  def contact
 copy	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
+create	/home/cjbrowne/rails_projects/sample_app/app/controllers/sessions_controller.rb	  def create
 create	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def create
 create	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function create()
 cssNameFor	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function cssNameFor(key)
 cumulativeOffset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function cumulativeOffset(element)
 cumulativeScrollOffset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function cumulativeScrollOffset(element)
+current_user	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def current_user
+current_user=	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def current_user=(user)
 curry	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function curry()
 dasherize	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function dasherize()
 defer	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function defer()
 define	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function define(D)
 delay	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function delay(timeout)
+destroy	/home/cjbrowne/rails_projects/sample_app/app/controllers/sessions_controller.rb	  def destroy
 detect	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function detect(iterator, context)
 dirCheck	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function dirCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dirNodeCheck	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
@@ -148,6 +155,7 @@ merge	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	f
 merge	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function merge(object)
 methodize	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function methodize()
 min	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function min(iterator, context)
+new	/home/cjbrowne/rails_projects/sample_app/app/controllers/sessions_controller.rb	  def new
 new	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def new
 observe	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function observe(element, eventName, handler)
 on	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function on(element, eventName, selector, callback)
@@ -165,6 +173,7 @@ prepareReplacement	/home/cjbrowne/rails_projects/sample_app/public/javascripts/p
 purgeElement	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function purgeElement(element)
 reject	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function reject(iterator, context)
 relativize	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function relativize(element)
+remember_token	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	    def remember_token
 reverse	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function reverse(inline)
 round	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function round()
 scan	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function scan(pattern, iterator)
@@ -173,6 +182,9 @@ select	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	
 select	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function select(selector, scope)
 set	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function set(key, value)
 show	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def show
+sign_in	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def sign_in(user)
+sign_out	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def sign_out
+signed_in?	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def signed_in?
 size	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function size()
 size	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function size()
 sortBy	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function sortBy(iterator, context)
@@ -188,6 +200,7 @@ sub	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	fun
 subclass	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function subclass()
 succ	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function succ()
 succ	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function succ()
+test_sign_in	/home/cjbrowne/rails_projects/sample_app/spec/spec_helper.rb	  def test_sign_in(user)
 times	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function times(count)
 times	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function times(iterator, context)
 title	/home/cjbrowne/rails_projects/sample_app/app/helpers/application_helper.rb	  def title
@@ -219,6 +232,7 @@ up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104122647_add_salt_t
 update	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function update(array, args)
 update	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function update(element, content)
 update	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function update(object)
+user_from_remember_token	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	    def user_from_remember_token
 values	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function values()
 values	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function values(object)
 viewportOffset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function viewportOffset(forElement)
