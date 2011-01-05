@@ -1,4 +1,4 @@
-1294243213
+1294244240
 AddAdminToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110105154142_add_admin_to_users.rb	class AddAdminToUsers 
 AddEmailUniquenessIndex	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 AddPasswordToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104100354_add_password_to_users.rb	class AddPasswordToUsers 

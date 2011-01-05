@@ -14,11 +14,13 @@ class UsersController < ApplicationController
   end
   
   def new
+    redirect_to root_path if current_user
     @user = User.new
     @title = "Sign up"
   end
 
   def create
+    redirect_to root_path if current_user
     @user = User.new(params[:user])
     if @user.save
       sign_in @user
@@ -47,9 +49,14 @@ class UsersController < ApplicationController
   end
   
   def destroy
-    User.find(params[:id]).destroy
-    flash[:success] = "User destroyed."
-    redirect_to users_path
+    if User.find(params[:id]) == current_user
+      flash[:error] = "Administrators can not delete their own account."
+      redirect_to users_path
+    else
+      User.find(params[:id]).destroy
+      flash[:success] = "User destroyed."
+      redirect_to users_path
+    end
   end
   
   private
