@@ -245,4 +245,51 @@ form.new_micropost textarea {
   margin-bottom: 0;
 }
 
+.actions {
 
+  float: left;
+}
+
+/* Character counter */
+
+#counter {
+  float: right;
+}
+
+/* New micropost CSS 
+
+div.microposts {
+  list-style-type: none;
+  display: block;
+}
+
+div.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  margin-top: 10px;
+  padding-top:10px;
+  margin-bottom: 10px;
+  width: 80%;
+  float: left;  
+}
+
+div.micropostDeleteLink {
+  width: 20%;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;  
+}
+
+div.micropost span.timestamp {
+  display:block;
+  font-size: 85%;
+  color: #666;
+  margin-top: 5px;  
+}
+
+.pagination {
+  clear:both;
+}
+
+*/

@@ -1,4 +1,4 @@
-1294320835
+1294330735
 AddAdminToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110105154142_add_admin_to_users.rb	class AddAdminToUsers 
 AddEmailUniquenessIndex	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 AddPasswordToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104100354_add_password_to_users.rb	class AddPasswordToUsers 
@@ -10,6 +10,7 @@ CreateMicroposts	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110106075
 CreateUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103141148_create_users.rb	class CreateUsers 
 Micropost	/home/cjbrowne/rails_projects/sample_app/app/models/micropost.rb	class Micropost 
 MicropostsController	/home/cjbrowne/rails_projects/sample_app/app/controllers/microposts_controller.rb	class MicropostsController 
+MicropostsHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/microposts_helper.rb	module MicropostsHelper
 PagesController	/home/cjbrowne/rails_projects/sample_app/app/controllers/pages_controller.rb	class PagesController 
 PagesHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/pages_helper.rb	module PagesHelper
 SampleApp	/home/cjbrowne/rails_projects/sample_app/config/application.rb	module SampleApp
@@ -39,6 +40,7 @@ blank	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	f
 camelize	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function camelize()
 capitalize	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function capitalize()
 ceil	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function ceil()
+char_length_warning	/home/cjbrowne/rails_projects/sample_app/app/helpers/application_helper.rb	  def char_length_warning(field_id, update_id, max_characters, options = {})
 checkDeficiency	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function checkDeficiency(tagName)
 checkReadyState	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function checkReadyState()
 clear	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function clear()
@@ -56,6 +58,7 @@ create	/home/cjbrowne/rails_projects/sample_app/app/controllers/microposts_contr
 create	/home/cjbrowne/rails_projects/sample_app/app/controllers/sessions_controller.rb	  def create
 create	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def create
 create	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function create()
+createObject	/home/cjbrowne/rails_projects/sample_app/public/javascripts/application.js	function createObject(objId)
 cssNameFor	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function cssNameFor(key)
 cumulativeOffset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function cumulativeOffset(element)
 cumulativeScrollOffset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function cumulativeScrollOffset(element)
@@ -222,6 +225,8 @@ sub	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	fun
 subclass	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function subclass()
 succ	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function succ()
 succ	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function succ()
+taCount	/home/cjbrowne/rails_projects/sample_app/public/javascripts/application.js	function taCount(taObj,Cnt)
+taLimit	/home/cjbrowne/rails_projects/sample_app/public/javascripts/application.js	function taLimit(taObj)
 test_sign_in	/home/cjbrowne/rails_projects/sample_app/spec/spec_helper.rb	  def test_sign_in(user)
 times	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function times(count)
 times	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function times(iterator, context)
@@ -262,5 +267,7 @@ values	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	
 values	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function values(object)
 viewportOffset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function viewportOffset(forElement)
 without	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function without()
+wrap	/home/cjbrowne/rails_projects/sample_app/app/helpers/microposts_helper.rb	  def wrap(content)
 wrap	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function wrap(wrapper)
+wrap_long_string	/home/cjbrowne/rails_projects/sample_app/app/helpers/microposts_helper.rb	    def wrap_long_string(text, max_width=30)
 zip	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function zip()
