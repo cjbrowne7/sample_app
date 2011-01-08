@@ -1,4 +1,4 @@
-1294330735
+1294501149
 AddAdminToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110105154142_add_admin_to_users.rb	class AddAdminToUsers 
 AddEmailUniquenessIndex	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103144957_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 AddPasswordToUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104100354_add_password_to_users.rb	class AddPasswordToUsers 
@@ -7,12 +7,15 @@ Application	/home/cjbrowne/rails_projects/sample_app/config/application.rb	  cla
 ApplicationController	/home/cjbrowne/rails_projects/sample_app/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/application_helper.rb	module ApplicationHelper
 CreateMicroposts	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110106075608_create_microposts.rb	class CreateMicroposts 
+CreateRelationships	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110108133004_create_relationships.rb	class CreateRelationships 
 CreateUsers	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103141148_create_users.rb	class CreateUsers 
 Micropost	/home/cjbrowne/rails_projects/sample_app/app/models/micropost.rb	class Micropost 
 MicropostsController	/home/cjbrowne/rails_projects/sample_app/app/controllers/microposts_controller.rb	class MicropostsController 
 MicropostsHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/microposts_helper.rb	module MicropostsHelper
 PagesController	/home/cjbrowne/rails_projects/sample_app/app/controllers/pages_controller.rb	class PagesController 
 PagesHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/pages_helper.rb	module PagesHelper
+Relationship	/home/cjbrowne/rails_projects/sample_app/app/models/relationship.rb	class Relationship 
+RelationshipsController	/home/cjbrowne/rails_projects/sample_app/app/controllers/relationships_controller.rb	class RelationshipsController 
 SampleApp	/home/cjbrowne/rails_projects/sample_app/config/application.rb	module SampleApp
 SessionsController	/home/cjbrowne/rails_projects/sample_app/app/controllers/sessions_controller.rb	class SessionsController 
 SessionsHelper	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	module SessionsHelper
@@ -55,6 +58,7 @@ contact	/home/cjbrowne/rails_projects/sample_app/app/controllers/pages_controlle
 copy	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
 correct_user	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	    def correct_user
 create	/home/cjbrowne/rails_projects/sample_app/app/controllers/microposts_controller.rb	  def create
+create	/home/cjbrowne/rails_projects/sample_app/app/controllers/relationships_controller.rb	  def create
 create	/home/cjbrowne/rails_projects/sample_app/app/controllers/sessions_controller.rb	  def create
 create	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def create
 create	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function create()
@@ -72,6 +76,7 @@ define	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	
 delay	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function delay(timeout)
 deny_access	/home/cjbrowne/rails_projects/sample_app/app/helpers/sessions_helper.rb	  def deny_access
 destroy	/home/cjbrowne/rails_projects/sample_app/app/controllers/microposts_controller.rb	  def destroy
+destroy	/home/cjbrowne/rails_projects/sample_app/app/controllers/relationships_controller.rb	  def destroy
 destroy	/home/cjbrowne/rails_projects/sample_app/app/controllers/sessions_controller.rb	  def destroy
 destroy	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def destroy
 detect	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function detect(iterator, context)
@@ -84,6 +89,7 @@ down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104100354_add_pass
 down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104122647_add_salt_to_users.rb	  def self.down
 down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110105154142_add_admin_to_users.rb	  def self.down
 down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110106075608_create_microposts.rb	  def self.down
+down	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110108133004_create_relationships.rb	  def self.down
 each	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function each(iterator)
 each	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -112,6 +118,11 @@ fireContentLoadedEvent	/home/cjbrowne/rails_projects/sample_app/public/javascrip
 first	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function first()
 flatten	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function flatten()
 floor	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function floor()
+follow!	/home/cjbrowne/rails_projects/sample_app/app/models/user.rb	  def follow!(followed)
+followed_by	/home/cjbrowne/rails_projects/sample_app/app/models/micropost.rb	    def self.followed_by(user)
+followers	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def followers
+following	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def following
+following?	/home/cjbrowne/rails_projects/sample_app/app/models/user.rb	  def following?(followed)
 get	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function get(key)
 getDimensions	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function getDimensions(element)
 getLayout	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function getLayout(element, preCompute)
@@ -250,6 +261,7 @@ truncate	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.j
 underscore	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function underscore()
 unescapeHTML	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function unescapeHTML()
 unfilterJSON	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function unfilterJSON(filter)
+unfollow!	/home/cjbrowne/rails_projects/sample_app/app/models/user.rb	  def unfollow!(followed)
 uniq	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function uniq(sorted)
 unset	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function unset(key)
 up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110103141148_create_users.rb	  def self.up
@@ -258,6 +270,7 @@ up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104100354_add_passwo
 up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110104122647_add_salt_to_users.rb	  def self.up
 up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110105154142_add_admin_to_users.rb	  def self.up
 up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110106075608_create_microposts.rb	  def self.up
+up	/home/cjbrowne/rails_projects/sample_app/db/migrate/20110108133004_create_relationships.rb	  def self.up
 update	/home/cjbrowne/rails_projects/sample_app/app/controllers/users_controller.rb	  def update
 update	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function update(array, args)
 update	/home/cjbrowne/rails_projects/sample_app/public/javascripts/prototype.js	function update(element, content)
